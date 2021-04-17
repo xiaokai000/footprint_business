@@ -36,15 +36,15 @@
 		},
 		methods: {
 			scan(){
-				// uni.scanCode({
-				//     onlyFromCamera: true,
-				//     success: function (res) {
-				        
-				//     }
-				// });
-				uni.navigateTo({
-					url: '../hexiao/index'
-				})
+				uni.scanCode({
+				    onlyFromCamera: true,
+				    success: function (res) {
+				        uni.navigateTo({
+				        	url: '../hexiao/index'
+				        })
+				    }
+				});
+
 			},
 			activate(){
 				uni.navigateTo({
